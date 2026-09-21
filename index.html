@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<button onclick="openSite()">Open Website</button>
+
+<script>
+function openSite() {
+    const url = "https://tini-lynxlord787.github.io/WebRetro1/";
+
+    const win = window.open("about:blank", "_blank");
+
+    if (win) {
+        win.location.href = url;
+    }
+}
+</script>
+
+</body>
+</html>
