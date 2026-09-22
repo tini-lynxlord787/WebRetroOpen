@@ -1,29 +1,20 @@
-<!DOCTYPE html>
 <html>
 <head>
-    <style>
-        button {
-            padding: 5px 10px;
-            font-size: 10px;
-            cursor: pointer;
-        }
-    </style>
 </head>
 <body>
-
-<button onclick="openSite()">Webretro</button>
-
+<button onclick="WebRetro()">Open</button>
 <script>
-function openSite() {
-    const url = "https://tini.webretro.page.gd";
-
-    const win = window.open("about:blank", "_blank");
-
-    if (win) {
-        win.location.href = url;
-    }
+function openGame() {
+var win = window.open()
+var url = "https://tini.webretro.page.gd/"
+var iframe = win.document.createElement('iframe')
+iframe.style.width = "100%";
+iframe.style.height = "100%";
+iframe.style.border = "none";
+iframe.src = url
+win.document.body.appendChild(iframe)
+win.document.body.style.margin = "0";
 }
 </script>
-
 </body>
 </html>
