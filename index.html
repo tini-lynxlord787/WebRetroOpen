@@ -1,34 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
-  <title>Open Game</title>
+  <title>Test</title>
 </head>
 <body>
 
-  <button onclick="Webretro()">Open</button>
+<button onclick="openBlank()">Open</button>
 
-  <script>
-    function openGame() {
-      const win = window.open("about:blank", "_blank");
+<script>
+function openBlank() {
+  const win = window.open("about:blank", "_blank");
 
-      if (!win) {
-        alert("Please allow pop-ups for this page.");
-        return;
-      }
-
-      const iframe = win.document.createElement("iframe");
-
-      iframe.style.width = "100%";
-      iframe.style.height = "100%";
-      iframe.style.border = "none";
-      iframe.src = "https://tini.webretro.page.gd/";
-
-      win.document.body.style.margin = "0";
-      win.document.body.style.overflow = "hidden";
-      win.document.body.appendChild(iframe);
-    }
-  </script>
+  if (!win) {
+    alert("The browser blocked the new window.");
+  }
+}
+</script>
 
 </body>
 </html>
