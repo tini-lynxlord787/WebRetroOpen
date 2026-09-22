@@ -5,17 +5,9 @@
 </head>
 <body>
 
-<button onclick="openBlank()">Open</button>
-
-<script>
-function openBlank() {
-  const win = window.open("about:blank", "_blank");
-
-  if (!win) {
-    alert("The browser blocked the new window.");
-  }
-}
-</script>
+<button onclick="window.open('about:blank', '_blank')">
+  Open
+</button>
 
 </body>
 </html>
