@@ -1,49 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Open Game</title>
+  <meta charset="UTF-8">
+  <title>Popup Test</title>
 </head>
 <body>
 
-<button onclick="WebRetro()">Open</button>
-
-<script>
-function openGame() {
-  const win = window.open("about:blank", "_blank");
-
-  if (!win) {
-    alert("Popup blocked.");
-    return;
-  }
-
-  win.document.open();
-  win.document.write(`
-    <!DOCTYPE html>
-    <html>
-    <head>
-      <style>
-        html, body {
-          margin: 0;
-          width: 100%;
-          height: 100%;
-          overflow: hidden;
-        }
-
-        iframe {
-          width: 100%;
-          height: 100%;
-          border: none;
-        }
-      </style>
-    </head>
-    <body>
-      <iframe src="https://tini.webretro.page.gd/"></iframe>
-    </body>
-    </html>
-  `);
-  win.document.close();
-}
-</script>
+<button onclick="window.open('about:blank')">
+  Open Blank
+</button>
 
 </body>
 </html>
